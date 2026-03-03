@@ -630,8 +630,8 @@ header {
 }
 
 .card-link {
-  display: inline-flex;
-  margin-top: 0.8rem;
+  display: block;        
+  margin-top: 0.4rem;    
   font-size: 0.86rem;
   color: #a5b4fc;
 }
