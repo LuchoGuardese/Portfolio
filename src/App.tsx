@@ -103,7 +103,7 @@ const App: React.FC = () => {
                   {isEs ? "Ver proyectos" : "View projects"}
                 </a>
                 <a href="#contact" className="btn-secondary">
-                  {isEs ? "Contact me" : "Let&apos;s connect"}
+                  {isEs ? "Contact me" : "Let's connect"}
                 </a>
               </div>
               <div className="hero-meta">
