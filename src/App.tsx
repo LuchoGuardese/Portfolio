@@ -248,6 +248,39 @@ const App: React.FC = () => {
           </div>
         </section>
 
+        {/* Formation */}
+        <section id="formation" className="section" data-reveal>
+          <div className="container">
+            <h2 className="section-title">{isEs ? "Formación" : "Education"}</h2>
+            <div className="cards-grid">
+              <article className="card">
+                <h3 className="card-title">
+                  {isEs
+                    ? "Técnico Universitario en Programación – UTN"
+                    : "University Technician in Programming – UTN"}
+                </h3>
+                <ul className="card-list">
+                  <li>
+                    {isEs
+                      ? "Diseño y desarrollo de software."
+                      : "Software design and development."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Bases de datos y programación orientada a objetos."
+                      : "Databases and object‑oriented programming."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Entornos web y buenas prácticas de ingeniería."
+                      : "Web environments and good engineering practices."}
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
         {/* Experience */}
         <section id="experience" className="section section-alt" data-reveal>
           <div className="container">
@@ -325,33 +358,6 @@ const App: React.FC = () => {
                 </ul>
               </article>
 
-              <article className="card">
-                <h3 className="card-title">
-                  {isEs ? "Formación" : "Education"}
-                </h3>
-                <p className="card-subtitle">
-                  {isEs
-                    ? "Técnico Universitario en Programación – UTN"
-                    : "University Technician in Programming – UTN"}
-                </p>
-                <ul className="card-list">
-                  <li>
-                    {isEs
-                      ? "Diseño y desarrollo de software."
-                      : "Software design and development."}
-                  </li>
-                  <li>
-                    {isEs
-                      ? "Bases de datos y programación orientada a objetos."
-                      : "Databases and object‑oriented programming."}
-                  </li>
-                  <li>
-                    {isEs
-                      ? "Entornos web y buenas prácticas de ingeniería."
-                      : "Web environments and good engineering practices."}
-                  </li>
-                </ul>
-              </article>
             </div>
           </div>
         </section>
