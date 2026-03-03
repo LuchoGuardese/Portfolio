@@ -76,7 +76,7 @@ const App: React.FC = () => {
                 <span>{isEs ? "mentalidad full‑stack" : "a full‑stack mindset"}</span>
               </h1>
               <p className="hero-subtitle">
-                {isEs ? "Soy " : "I&apos;m a "}
+              {isEs ? "Soy " : "I'm a "}
                 <span className="hero-highlight">
                   {isEs
                     ? "Técnico Universitario en Programación (UTN)"
@@ -170,7 +170,7 @@ const App: React.FC = () => {
           <div className="container">
             <h2 className="section-title">{isEs ? "Sobre mí" : "About"}</h2>
             <p className="section-text">
-              {isEs ? "Soy " : "I&apos;m a "}
+              {isEs ? "Soy " : "I'm a "}
               <strong>
                 {isEs
                   ? "Técnico Universitario en Programación (UTN)"
@@ -228,14 +228,14 @@ const App: React.FC = () => {
               <strong>React + TypeScript</strong>
               {isEs
                 ? ", y actualmente profundizo en "
-                : ", and I&apos;m currently deepening my knowledge of "}
+                : ", and I'm currently deepening my knowledge of "}
               <strong>Java</strong>{" "}
               {isEs
                 ? "para fortalecer mi perfil backend en distintos entornos."
                 : "to strengthen my backend profile in different environments."}
             </p>
             <p className="section-text">
-              {isEs ? "Busco unirme a un " : "I&apos;m looking to join a "}
+              {isEs ? "Busco unirme a un " : "I'm looking to join a "}
               <strong>{isEs ? "equipo técnico" : "technical team"}</strong>{" "}
               {isEs ? "donde pueda aportar " : "where I can bring "}
               <strong>
@@ -561,7 +561,7 @@ const App: React.FC = () => {
             <p className="section-text">
               {isEs
                 ? "¿Te interesa que trabajemos juntos? Estoy abierto a nuevas oportunidades como "
-                : "Interested in working together? I&apos;m open to new opportunities as a "}
+                : "Interested in working together? I'm open to new opportunities as a "}
               <strong>Backend / Full‑Stack Developer</strong>
               {isEs
                 ? ", tanto en roles a largo plazo como en proyectos puntuales."
