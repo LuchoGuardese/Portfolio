@@ -71,3 +71,10 @@ export default defineConfig([
   },
 ])
 ```
+
+## Mis proyectos
+
+- **Simulador de Sistema de Gestión de Biblioteca**  
+  Proyecto en C++ que implementa un sistema completo de gestión de biblioteca (libros, usuarios, préstamos, reservas, multas y reportes), utilizando archivos CSV para la persistencia de datos.  
+  Repositorio: [Cajero-automatico-C-funcional](https://github.com/LuchoGuardese/Cajero-automatico-C-funcional)
+

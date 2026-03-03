@@ -429,6 +429,52 @@ const App: React.FC = () => {
                   {isEs ? "Repositorio Backend" : "Backend repository"}
                 </a>
               </article>
+
+              <article className="card card-project">
+                <div className="card-project-header">
+                  <span className="badge">
+                    {isEs ? "C++ · Consola" : "C++ · Console"}
+                  </span>
+                  <h3 className="card-title">
+                    {isEs
+                      ? "Simulador de Sistema de Gestión de Biblioteca"
+                      : "Library Management System Simulator"}
+                  </h3>
+                </div>
+                <p className="section-text">
+                  {isEs
+                    ? "Proyecto académico en C++ que simula un sistema completo de gestión de biblioteca: libros, usuarios, préstamos, reservas, multas y reportes, utilizando archivos CSV para la persistencia de datos."
+                    : "Academic C++ project that simulates a complete library management system: books, users, loans, reservations, fines and reports, using CSV files for data persistence."}
+                </p>
+                <ul className="card-list">
+                  <li>
+                    {isEs ? "Gestión de libros, usuarios y stock." : "Management of books, users and stock."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Registro de préstamos, devoluciones y cálculo de multas por demora."
+                      : "Loan and return tracking with fine calculation for late returns."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Sistema de reservas con lista de espera y actualización automática de disponibilidad."
+                      : "Reservation system with waiting list and automatic availability updates."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Uso de estructuras, arreglos y manejo de archivos CSV con <fstream>."
+                      : "Uses structs, arrays and CSV file handling with <fstream>."}
+                  </li>
+                </ul>
+                <a
+                  href="https://github.com/LuchoGuardese/Cajero-automatico-C-funcional"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="card-link"
+                >
+                  {isEs ? "Ver repositorio en GitHub" : "View GitHub repository"}
+                </a>
+              </article>
             </div>
           </div>
         </section>
