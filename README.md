@@ -1,80 +1,48 @@
-# React + TypeScript + Vite
+## Portfolio de Luciano Guardese
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene mi portfolio personal como **Backend Developer con perfil full‑stack**, desarrollado con **React + TypeScript + Vite**.
 
-Currently, two official plugins are available:
+El sitio resume mi formación, experiencia, proyectos y stack tecnológico, y está pensado como una carta de presentación técnica para recruiters y equipos de desarrollo.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Contenido del portfolio
 
-## React Compiler
+- **Hero / Presentación**: resumen rápido de quién soy, mi rol y stack principal.
+- **Sobre mí**: contexto sobre mi perfil, experiencia con APIs REST, arquitectura modular y trabajo en producción.
+- **Experiencia**: proyectos académicos, personales y experiencia en Oleohidráulica Guardese.
+- **Proyectos destacados**:
+  - **Oleohidráulica Guardese – App Full‑Stack en producción**  
+    Aplicación web full‑stack con autenticación JWT, control de roles, panel de administración y deploy en Render (frontend, backend y base de datos PostgreSQL con Sequelize).
+  - **Simulador de Sistema de Gestión de Biblioteca (C++)**  
+    Proyecto académico en C++ que simula un sistema completo de gestión de biblioteca usando archivos CSV para persistencia de datos.  
+    Repositorio: [`Cajero-automatico-C-funcional`](https://github.com/LuchoGuardese/Cajero-automatico-C-funcional)
+- **Stack tecnológico**: lenguajes, frameworks, bases de datos y herramientas que uso en mi día a día.
+- **Contacto**: enlaces a mi email, LinkedIn y GitHub.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías principales
 
-## Expanding the ESLint configuration
+- **Frontend**: React, TypeScript, Vite, CSS.
+- **Backend (experiencia mostrada en proyectos)**: Node.js, Express, TypeScript.
+- **Base de datos**: PostgreSQL (Sequelize ORM).
+- **Otras herramientas**: Git, GitHub, Render, Docker, ESLint, Prettier.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Cómo correr el proyecto localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Instalar dependencias
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Levantar el entorno de desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Luego abrí la URL que Vite te muestre en la consola (por defecto suele ser `http://localhost:5173`).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Deploy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+El portfolio está preparado para deploy estático (por ejemplo, en Render, Vercel o Netlify) usando el build de Vite:
+
+```bash
+npm run build
 ```
 
-## Mis proyectos
-
-- **Simulador de Sistema de Gestión de Biblioteca**  
-  Proyecto en C++ que implementa un sistema completo de gestión de biblioteca (libros, usuarios, préstamos, reservas, multas y reportes), utilizando archivos CSV para la persistencia de datos.  
-  Repositorio: [Cajero-automatico-C-funcional](https://github.com/LuchoGuardese/Cajero-automatico-C-funcional)
-
+Esto genera la versión optimizada en la carpeta `dist/`.
