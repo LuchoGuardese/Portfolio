@@ -119,7 +119,7 @@ const App: React.FC = () => {
             <aside className="hero-right">
               <div className="hero-photo-wrapper" data-reveal>
                 <img
-                  src="/profile.jpeg"
+                  src="/profile.png"
                   alt="Foto de Luciano Guardese"
                   className="hero-photo"
                 />
