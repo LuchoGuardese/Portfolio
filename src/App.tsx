@@ -571,7 +571,7 @@ const App: React.FC = () => {
               <strong>Backend / Full‑Stack Developer</strong>
               {isEs
                 ? ", tanto en roles a largo plazo como en proyectos puntuales."
-                : ", whether it&apos;s a long‑term role or a focused project."}
+                : ", whether it's a long‑term role or a focused project."}
             </p>
             <div className="contact-grid">
               <div className="contact-card">
