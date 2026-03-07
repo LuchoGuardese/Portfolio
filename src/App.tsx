@@ -277,6 +277,19 @@ const App: React.FC = () => {
                   </li>
                 </ul>
               </article>
+
+              <article className="card">
+                <h3 className="card-title">
+                  {isEs
+                    ? "Inglés – Upper Intermediate B2"
+                    : "English – Upper Intermediate B2"}
+                </h3>
+                <p className="card-subtitle">
+                  {isEs
+                    ? "Academia de Inglés Juan XXIII"
+                    : "Academia de Inglés Juan XXIII"}
+                </p>
+              </article>
             </div>
           </div>
         </section>
