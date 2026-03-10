@@ -432,7 +432,7 @@ const App: React.FC = () => {
                   {isEs ? "Ver demo en producción" : "View live demo"}
                 </a>
                 <a
-                  href="https://github.com/belenburgos20/Trabajo-Final-Frontend"
+                  href="https://github.com/LuchoGuardese/Trabajo-Final-Frontend"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="card-link"
@@ -440,7 +440,7 @@ const App: React.FC = () => {
                   {isEs ? "Repositorio Frontend" : "Frontend repository"}
                 </a>
                 <a
-                  href="https://github.com/belenburgos20/Trabajo-Final-Backend"
+                  href="https://github.com/LuchoGuardese/Trabajo-Final-Backend"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="card-link"
