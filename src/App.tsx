@@ -494,6 +494,47 @@ const App: React.FC = () => {
                   {isEs ? "Ver repositorio en GitHub" : "View GitHub repository"}
                 </a>
               </article>
+
+              <article className="card card-project">
+                <div className="card-project-header">
+                  <span className="badge">
+                    {isEs ? "C++ · Consola" : "C++ · Console"}
+                  </span>
+                  <h3 className="card-title">
+                    {isEs ? "Cajero de Supermercado" : "Supermarket Cashier"}
+                  </h3>
+                </div>
+                <p className="section-text">
+                  {isEs
+                    ? "Simulación de un cajero de supermercado desarrollado en C++, que permite gestionar productos, totales y tickets, utilizando archivos CSV para cargar los datos."
+                    : "Supermarket cashier simulation developed in C++, handling products, totals and tickets, using CSV files to load data."}
+                </p>
+                <ul className="card-list">
+                  <li>
+                    {isEs
+                      ? "Lectura de productos desde archivos CSV y cálculo automático de totales."
+                      : "Reads products from CSV files and automatically calculates totals."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Manejo de tickets y detalle de compra en consola."
+                      : "Handles tickets and purchase details in the console."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Uso de estructuras y manejo de archivos con <fstream>."
+                      : "Uses structs and file handling with <fstream>."}
+                  </li>
+                </ul>
+                <a
+                  href="https://github.com/LuchoGuardese/Cajero"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="card-link"
+                >
+                  {isEs ? "Ver repositorio en GitHub" : "View GitHub repository"}
+                </a>
+              </article>
             </div>
           </div>
         </section>
