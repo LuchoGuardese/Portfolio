@@ -430,11 +430,29 @@ header {
   box-shadow: 0 0 35px rgba(59, 130, 246, 0.5);
   opacity: 0.4;
   pointer-events: none;
-  animation: hero-orbit 10s linear infinite;
+  /* Evitamos animar hasta que el contenedor esté visible (mejora carga inicial). */
+  animation: none;
 }
 
 .float-card {
+  /* Evitamos animar hasta que la card esté visible (mejora carga inicial). */
+  animation: none;
+}
+
+/* Arranca animaciones solo cuando IntersectionObserver marque el elemento visible */
+.hero-photo-wrapper.is-visible .hero-photo-orbit {
+  animation: hero-orbit 10s linear infinite;
+}
+
+.float-card.is-visible {
   animation: float-card 8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-photo-wrapper.is-visible .hero-photo-orbit,
+  .float-card.is-visible {
+    animation: none;
+  }
 }
 
 .hero-card {

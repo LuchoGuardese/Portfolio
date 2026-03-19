@@ -122,6 +122,10 @@ const App: React.FC = () => {
                   src="/profile.png"
                   alt="Foto de Luciano Guardese"
                   className="hero-photo"
+                  width={210}
+                  height={210}
+                  loading="eager"
+                  decoding="async"
                 />
                 <div className="hero-photo-orbit" />
               </div>
@@ -528,6 +532,57 @@ const App: React.FC = () => {
                 </ul>
                 <a
                   href="https://github.com/LuchoGuardese/Cajero"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="card-link"
+                >
+                  {isEs ? "Ver repositorio en GitHub" : "View GitHub repository"}
+                </a>
+              </article>
+
+              <article className="card card-project">
+                <div className="card-project-header">
+                  <span className="badge">
+                    {isEs ? "Full‑Stack · Trabajo Final" : "Full‑Stack · Final Project"}
+                  </span>
+                  <h3 className="card-title">
+                    {isEs ? "Control de Gastos Personales" : "Personal Expense Tracker"}
+                  </h3>
+                </div>
+                <p className="section-text">
+                  {isEs
+                    ? "Aplicación web para registrar, visualizar y gestionar ingresos y egresos personales, con balance general y filtros avanzados."
+                    : "Web application to register, view and manage personal income and expenses, with an overall balance and advanced filters."}
+                </p>
+                <ul className="card-list">
+                  <li>
+                    {isEs
+                      ? "Registro de usuarios con persistencia en base de datos."
+                      : "User registration with database persistence."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Inicio de sesión y acceso a un panel principal."
+                      : "Login and access to a main dashboard."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "ABM de movimientos: editar y eliminar ingresos/egresos."
+                      : "Movements CRUD: edit and delete income/expense entries."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Balance general visible y actualizado, con filtros por categoría y fecha."
+                      : "Overall balance visible and up to date, with filters by category and date."}
+                  </li>
+                  <li>
+                    {isEs
+                      ? "Tecnologías: React 18, Express + Sequelize, PostgreSQL 15, Redis 7 y Nginx."
+                      : "Tech stack: React 18, Express + Sequelize, PostgreSQL 15, Redis 7 and Nginx."}
+                  </li>
+                </ul>
+                <a
+                  href="https://github.com/LuchoGuardese/Control-de-gastos-Personales"
                   target="_blank"
                   rel="noreferrer noopener"
                   className="card-link"
